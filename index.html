@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gorilla Tech</title>
+
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function() {
+function filterPath(string) {
+return string
+.replace(/^\//,'')
+.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+.replace(/\/$/,'');
+}
+$('a[href*=#]').each(function() {
+if ( filterPath(location.pathname) == filterPath(this.pathname)
+&& location.hostname == this.hostname
+&& this.hash.replace(/#/,'') ) {
+var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+if ($target) {
+var targetOffset = $target.offset().top;
+$(this).click(function() {
+$('html, body').animate({scrollTop: targetOffset}, 300);
+return false;
+});
+}
+}
+});
+});
+// ]]></script>
+
+</head>
+
+<body>
+
+
+	<div id='cssmenu' >
+ 	 <ul>
+ 	  <li><a href="#home">Home</span></a></li>
+	  <li><a href="#empresa">Empresa</span></a></li>
+	  <li><a href="#servicos">Serviços</span></a></li>
+	  <li><a href="#contato">Contato</span></a></li>						     </ul>
+	</div>
+            
+      
+	<div id="logo">
+	<div align="center"><img src="Pictures/LOGO.jpg" width="300px" height="300px"  /></div>
+	</div>
+      
+		<a name="home"></a>
+        <div id=b1>
+<div id=corpo_empresa>
+	
+    <div id="titulo">
+		<p>&nbsp;</p>
+		<img src="Pictures/HOME.png" />
+        <p>&nbsp;</p>
+	</div>
+  <div id="texto_empresa">
+<p>A Gorilla Tech é uma empresa prestadora de serviços na área de Tecnológia da Informação que tem como foco a comunicação visual.</p>
+	<p>Oferecemos serviços de marketing digital e social media, com intuito de transformar possiveis clientes em consumidores e também melhorar a imagem de uma pessoa ou empresa gerando assim valor comercial e pessoal.&nbsp;</p>
+	<p>&nbsp;</p>   
+	<p>Para mais informação entre em <a href="#contato">Contato</span></a>.</p>
+	<p><img src="Pictures/mockup copy.png" alt="mockup" /></p>
+  </div>
+ </div>
+ 
+ <a name="empresa"></a>
+ <div id="espaco"></div>
+ <div id=corpo_empresa>
+	<div id="titulo">
+		<p>&nbsp;</p>
+		<img src="Pictures/EMPRESA.png" />
+		<p>&nbsp;</p>
+	</div>
+    
+<div id="texto_empresa">
+	
+    <p>&nbsp;</p>
+	<p>Missão – Através de nossos serviços oferecer comodidade e satisfação, com o intuito de estar sempre presente nos momentos certos, dando aos nossos clientes a segurança em manter softwares ativos na sua plena funcionalidade e oferecendo suporte técnico rápido e eficiente , evitando todo e qualquer transtorno, otimizando tempo e dinheiro. 
+    <p>&nbsp;</p>
+	<p>Visão – Atingir metas de forma eficaz e eficiente, tornando-se referência na área de suporte técnico em Tecnologia da Informação, podendo oferecer maior qualidade na prestação de nossos serviços e prezando sempre a melhoria contínua em atendimento aos nossos clientes. 
+	<p>&nbsp;</p>
+	<p>Valores – Oferecer aos nossos colaboradores treinamento e capacitação a fim de melhorar a qualidade em atendimento e promover ações motivacionais, ressaltando a importância de um bom relacionamento interpessoal entre os funcionários, o que acaba por se refletir de forma direta no atendimento aos clientes, lhes dando máxima prioridade , visando um relacionamento de confiança e lealdade. </p>
+    <p align="center">&nbsp;</p>
+	
+	
+
+
+
+  </div>
+</div>
+      
+     
+		
+        
+         <a name="servicos"></a>
+        <div id="espaco"></div>
+<div id=corpo_empresa>
+	<div id="titulo">
+    	<p>&nbsp;</p>
+    	<img src="Pictures/SERVICOS.png" /> 
+        <p>&nbsp;</p>
+	</div>   											 	
+<div id="texto_empresa">
+	<p><strong>Gorilla Tech Empresas :</strong> Para empresas que desejam ter um suporte na área de comunicação visual tanto física quanto em redes sociais, nós oferecemos os melhores serviços em geração de conteúdo para facebook e instagram, uso de ferramentas como AdWords do Google para impulsionamento de sites, ferramentas especiais desenvolvidades com intuito de melhorar o visual da sua empresa na internet e atrair o público desejado.
+   <p>&nbsp;</p>
+	<p> <strong> Gorilla Tech Usuário: </strong>Para o conforto do nosso cliente a Gorilla Tech também oferece um plano para o usúario comum que pretende melhorar sua imagem nas redes sociais, com pacotes de seguidores para instagram e facebook e gerenciamento de conteudo de Social Influencer um novo segmento no ramo das plataformas digitais</p>
+        <p>&nbsp;</p>
+    <p align="center"> <img src="Pictures/serv.png"  /></p>
+    
+       
+
+       
+</div>
+ </div>
+
+ 
+  
+  
+  
+  
+ 
+ 		 <a name="contato"></a>
+         <div id="espaco"></div>
+<div id=corpo_empresa>
+	<div id="titulo">
+    	<p>&nbsp;</p>
+    	<img src="Pictures/CONTATO.png"  /> 
+        <p>&nbsp;</p>
+	</div>
+<div id="texto_empresa">
+	<p> Para contato mande um e-mail para <a href="mailto:contato@itek.com.br">contato@itek.com.br</a> </p>
+    <p> Ou pelo telefone (11) 994 324 871 </p>
+
+    <a href="mailto:contato@itek.com.br"><img src="Pictures/Communication.png" alt="communication" /></a>
+    <div align="center">
+      <img src="Pictures/fbicon.png" width="125"/>
+      <img src="Pictures/wppicon.png" width="125" height="125"/>
+      <img src="Pictures/instaicon.png" width="125" height="125" />
+      </div>
+       <p>&nbsp; </p>
+        <p>&nbsp; </p> <p>&nbsp; </p>
+        
+      </div> 
+ </div>
+      
+
+
+<div id="final">
+	<p id="p_final">&nbsp; </p>
+	<p>2017 ®GORRILA TECH - IT SOLUTION Todos direitos reservados </p>
+	<p id="p_final"> Av. Candido José Xavier, 79 - São Paulo - SP - CEP 05822-020</p>
+	<p id="p_final"> +55 (11) 99432-4871 (WhatsApp)</p>
+	<p>&nbsp; </p>
+   
+    	
+</div> 
+      
+      
+
+</body>
+</html>
